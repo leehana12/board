@@ -78,7 +78,6 @@ public class BoardDAO {
 						rs.getInt(6)
 						);
 				ls.add(vo);
-				System.out.println("반복실행확인");
 			}			
 		} catch (Exception e) {
 			e.printStackTrace();
