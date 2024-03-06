@@ -62,7 +62,8 @@ public class BoardDAO {
 		// java.beans.Statement가 아닌 jdbc를 이용한 데이터 베이스와 상호 작용을 위해서는 java.sql.Statement를 사용한다.
 		java.sql.Statement stmt = null; 
 		ResultSet rs = null;
-		String query = "select num, title, writer, content, regdate, cnt from board order by num desc";
+		//쿼리문 역순출력 desc
+		String query = "select num, title, writer, content, regdate, cnt from board order by num desc"; 
 		List<BoardVO> ls = new ArrayList<>();
 		try {
 			con = ju.getConnection();
