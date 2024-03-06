@@ -35,6 +35,7 @@
 			</tr>
 		</c:forEach>
 	</table>
+	<a href="<c:url value="/board/registForm.jsp"/>"><button>글등록</button> </a>
 </body>
 </html>
 
