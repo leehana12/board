@@ -68,7 +68,6 @@ public class BoardDAO {
 			con = ju.getConnection();
 			stmt = con.createStatement();
 			rs = stmt.executeQuery(query);
-			System.out.println("one");
 			while (rs.next()) {
 				BoardVO vo = new BoardVO(
 						rs.getInt(1),
@@ -79,6 +78,7 @@ public class BoardDAO {
 						rs.getInt(6)
 						);
 				ls.add(vo);
+				System.out.println("반복실행확인");
 			}			
 		} catch (Exception e) {
 			e.printStackTrace();
