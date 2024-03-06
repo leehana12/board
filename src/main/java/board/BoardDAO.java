@@ -68,6 +68,7 @@ public class BoardDAO {
 			con = ju.getConnection();
 			stmt = con.createStatement();
 			rs = stmt.executeQuery(query);
+			System.out.println("one");
 			while (rs.next()) {
 				BoardVO vo = new BoardVO(
 						rs.getInt(1),
@@ -77,6 +78,7 @@ public class BoardDAO {
 						new Date(rs.getDate(5).getTime()),
 						rs.getInt(6)
 						);
+				ls.add(vo);
 			}			
 		} catch (Exception e) {
 			e.printStackTrace();
