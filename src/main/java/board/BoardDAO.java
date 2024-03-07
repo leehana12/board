@@ -193,13 +193,38 @@ public class BoardDAO {
 		return ret;
 	}
 
-	// 카운터 증가 (개수 증가와 데이터 삭제)
-	
-	/*
-	 * public int updateCnt(int num) { Connection con = null; PreparedStatement
-	 * pstmt = null; // SQL문 실행 위해 객체 초기화 String query =
-	 * "update board set cnt = cnt +1 where num=?"; }
-	 */
+	// 카운터 증가 (조회수 개수 증가와 데이터 삭제)		
+	  public int updateCnt(int num) { 
+		  Connection con = null; 
+		  PreparedStatement pstmt = null; // SQL문 실행 위해 객체 초기화 
+		  String query = "update board set cnt = cnt +1 where num=?"; 
+		  int ret = -1;
+		  try {
+			con = ju.getConnection();
+			pstmt = con.prepareStatement(query);
+			pstmt.setInt(1, num);
+			ret = pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			if(pstmt != null) {
+				try {
+					pstmt.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(con != null) {
+				try {
+					con.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		return ret;  
+	  }
+	 
 
 	// 삭제(D) - 게시글 번호를 매개변수로 받아 해당 번호의 게시글을 삭제하는 메서드
 	public int delete(int num) {
