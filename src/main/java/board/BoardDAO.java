@@ -172,10 +172,8 @@ public class BoardDAO {
 			
 			// 쿼리의 매개변수에 값을 설정 - 각 ?에 대응하는 값을 BoardVO 객체에서 가져와 대입
 			pstmt.setString(1, vo.getTitle()); // 첫번쨰 물을표에 vo의 제목을 설정
-			pstmt.setString(2, vo.getWriter()); // 두번쨰 물음표에 vo의 작성자를 설정
-			pstmt.setString(3, vo.getContent()); // 세번쨰 물음표에 vo의 내용을 설정
-			pstmt.setInt(4, vo.getNum()); // 네번쨰 물음표에 vo의 번호를 설정
-			
+			pstmt.setString(2, vo.getContent()); // 두번쨰 물음표에 vo의 작성자를 설정
+			pstmt.setInt(3, vo.getNum()); // 세번쨰 물음표에 vo의 내용을 설정
 			ret = pstmt.executeUpdate(); // 쿼리를 실행하고 업데이트된 행의 수를 반환. 반환된 값은 ret 변수에 저장
 		} catch (Exception e) {
 			e.printStackTrace(); // SQL 예외 발생시 에러 메시지 출력
