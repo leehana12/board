@@ -22,8 +22,9 @@
 		<input type="hidden" name="num" value="${vo.num}" >
 		<!-- required 속성은 폼 데이터(form data)가 서버로 제출되기 전 반드시 채워져 있어야 하는 입력 필드를 명시 -->
 		<input type="text" name="title" value="${vo.title}" required ><br>
-		<!-- disabled 속성은 해당 <input> 요소가 비활성화됨을 명시합니다 -->
-		<input type="text" name="writer" value="${vo.writer}" required disabled ><br>
+		<!-- disabled 속성은 해당 <input> 요소가 비활성화됨을 명시합니다 /값이 전달되지 않아 내용 수정이 안됨.-->
+		<!-- readonly는 값이 전달 되는 반면 desabled은 값이 전달 되지 않는다. -->
+		<input type="text" name="writer" value="${vo.writer}" required readonly ><br>
 		<textarea rows="4" cols="20" name="content">${vo.content}</textarea><br>	
 		<input type="submit" value="수정" >	
 	</form>
