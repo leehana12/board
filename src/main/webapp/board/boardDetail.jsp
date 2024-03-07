@@ -26,5 +26,5 @@
 	<p>조회수:${vo.cnt}</p>
 	<!-- num값으로 editForm으로 이동 -->
 	<a href="<c:url value="/board/editForm.jsp?num=${vo.num}"/>"><button>수정</button> </a><br>
-	<a href="#"><button>삭제</button> </a>
+	<a href="<c:url value="/board/deleteForm.jsp?num=${vo.num}" />"><button>삭제</button> </a>
 </body>
