@@ -28,5 +28,6 @@
 		<textarea rows="4" cols="20" name="content">${vo.content}</textarea><br>	
 		<input type="submit" value="수정" >	
 	</form>
+	<a href="<c:url value="/board/list.jsp?num=${vo.num}" />"><button>게시판</button> </a>
 </body>
 </html>
