@@ -27,5 +27,5 @@
 	<!-- num값으로 editForm으로 이동 -->
 	<a href="<c:url value="/board/editForm.jsp?num=${vo.num}"/>"><button>수정</button> </a><br>
 	<a href="<c:url value="/board/deleteForm.jsp?num=${vo.num}" />"><button>삭제</button> </a><br>
-	<a href="<c:url value="/board/list.jsp?num=${vo.num}" />"><button>게시글 목록</button> </a>
+	<a href="<c:url value="/board/list.jsp?num=${vo.num}" />"><button>게시판</button> </a>
 </body>
