@@ -13,5 +13,6 @@
 		<textarea rows="4" cols="content" placeholder="내용"></textarea><br>
 		<input type="submit" value="등록" ><br>
 	</form>
+	<a href="<c:url value="/board/list.jsp?num=${vo.num}" />"><button>게시판</button> </a>
 </body>
 </html>
