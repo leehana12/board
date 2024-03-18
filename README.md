@@ -58,16 +58,3 @@
 ***
 ## :wrench: 구현기능 둘러보기
 
-### 1. 게시글 목록 보기
-![image](https://github.com/leehana12/board/assets/154123779/6aca07a2-976d-484c-b094-59db16687e13 )
-
-### 2. 게시글 수정 하기
-**수정전**
-![image](https://github.com/leehana12/board/assets/154123779/d551391a-d81c-4b8b-b081-806b0f483d5a )
-<br>
-![image](https://github.com/leehana12/board/assets/154123779/c1810a28-9c34-4555-af8a-f15d2707068c)<br>
-**수정 후**
-![image](https://github.com/leehana12/board/assets/154123779/cc451b08-5acb-4330-81ec-c6ca14fcb0df)
-
-
-
